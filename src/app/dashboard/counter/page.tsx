@@ -3,7 +3,7 @@ import { CartCounter } from "@/shopping-cart";
 
 
 export const metadata = {
-  title: 'Counter Page',
+  title: 'Shopping Cart',
   description: 'Simple Counter',
 };
 
