@@ -1,5 +1,6 @@
 import { SimplePokemon, PokemonsResponse, PokemonGrid } from "@/pokemons";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 
 
 
@@ -17,6 +18,9 @@ const getPokemons = async (limit: number): Promise<SimplePokemon[]> => {
             name: pokemon.name
         }
     });
+
+    // throw new Error("Not implemented yet");
+    // throw notFound();
 
     return pokemons;
 }
