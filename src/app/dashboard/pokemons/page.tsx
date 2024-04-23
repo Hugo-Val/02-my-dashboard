@@ -3,7 +3,10 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 
 
-
+export const metadata = {
+  title: 'Pokemons List',
+  description:'List of all pokemons in the world.'
+};
 
 
 const getPokemons = async (limit: number): Promise<SimplePokemon[]> => {
@@ -31,7 +34,7 @@ export default async function PokemonsPage() {
 
   return (
     <div className="flex flex-col">
-      <span className="text-3xl font-bold text-center">Pokemons List <small>static</small></span>
+      <span className="text-3xl font-bold text-center">Pokemons List <small className="text-blue-500">static</small></span>
       
         <PokemonGrid pokemons={pokemons} />
     </div>
