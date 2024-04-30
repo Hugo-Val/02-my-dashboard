@@ -13,6 +13,7 @@ export const WidgetsGrid = () => {
             subtitle = "Productos en el carrito"
             label = {isCart.toString()}
             icon = {<IoCartOutline size={70} className="text-blue-600"/>}
+            href="/dashboard/counter"
         />  
         {/* <SimpleWidget />   */}
     </div> 
